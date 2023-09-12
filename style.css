@@ -1,0 +1,247 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Ubuntu";
+  font-style: normal;
+}
+
+.container {
+  width: 300%;
+  display: flex;
+}
+.container .slider-container {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 50vw;
+  transition: transform 0.5s ease-in-out;
+}
+.container .slider-container .slider {
+  display: flex;
+  width: 300%;
+}
+.container .slider-container .slider.violet-slider {
+  background-color: #630773;
+}
+.container .slider-container .slider.blue-slider {
+  background-color: #173673;
+}
+.container .slider-container .slider.green-slider {
+  background-color: #0D5E3C;
+}
+.container .slider-container .slider .slide {
+  display: flex;
+  width: 73vw;
+  height: 100vh;
+  transform: skew(-12deg);
+  transform-origin: top left;
+  position: relative;
+  box-shadow: inset -25px 0px 75px rgba(0, 0, 0, 0.15);
+}
+.container .slider-container .slider .slide.violet-slide {
+  background-color: #9C10B4;
+}
+.container .slider-container .slider .slide.blue-slide {
+  background-color: #0D41A7;
+}
+.container .slider-container .slider .slide.green-slide {
+  background-color: #138F5B;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 13.5vw;
+  margin-top: 3.65vw;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 120%;
+  color: #ffffff;
+}
+.logo .text.violet-text {
+  font-weight: 500;
+  color: #D72DF3;
+}
+.logo .text.blue-text {
+  font-weight: 500;
+  color: #3577F6;
+}
+.logo .text.green-text {
+  font-weight: 500;
+  color: #0ED984;
+}
+.logo .logo-img {
+  margin: 0 0.26vw;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-image: url("img/worldwide.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-main-container {
+  position: absolute;
+  top: 15vw;
+  left: 13.5vw;
+  right: 13.5vw;
+  bottom: 15vw;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.slide-main-container .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.slide-main-container .text .category {
+  position: absolute;
+  top: 0;
+  font-size: 1.04vw;
+}
+.slide-main-container .text .category.violet-text {
+  font-weight: 500;
+  color: #D72DF3;
+}
+.slide-main-container .text .category.blue-text {
+  font-weight: 500;
+  color: #3577F6;
+}
+.slide-main-container .text .category.green-text {
+  font-weight: 500;
+  color: #0ED984;
+}
+.slide-main-container .text .title {
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 110%;
+  margin-top: 3.61vw;
+}
+.slide-main-container .text .description {
+  position: absolute;
+  bottom: 0;
+  font-weight: 300;
+  font-size: 1.04vw;
+  line-height: 125%;
+}
+
+.pagination {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 7.1vw;
+  margin-left: 13.5vw;
+}
+.pagination .dot {
+  margin: 0 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  background-image: none;
+}
+.pagination .dot.active {
+  background-image: url("img/worldwide.png");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  border: none;
+}
+
+.images-container {
+  width: 37.5vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  mix-blend-mode: multiply;
+  overflow: hidden;
+}
+.images-container .image {
+  height: 50%;
+  background-image: url("img/image1.png");
+  background-size: cover;
+  background-position: center right;
+  padding-top: 75%;
+  right: 0;
+  flex: 1;
+}
+
+.description-container {
+  height: 35.15vw;
+  margin: 0 8.33vw;
+}
+.description-container .description {
+  height: 22.13vw;
+  margin: 6.5vw 0;
+  display: flex;
+}
+.description-container .description .description-element {
+  margin: 3vw 2.6vw;
+}
+.description-container .description .description-element .color {
+  height: 3.9vw;
+  width: 3.9vw;
+  background-size: cover;
+}
+.description-container .description .description-element .color.violet {
+  background-image: url("img/development.png");
+  color: #D72DF3;
+}
+.description-container .description .description-element .color.blue {
+  background-image: url("img/growth.png");
+  color: #3577F6;
+}
+.description-container .description .description-element .color.green {
+  background-image: url("img/graduated.png");
+  color: #0ED984;
+}
+.description-container .description .description-element .title {
+  margin-top: 1.8vw;
+  font-weight: 500;
+  font-size: 1.87vw;
+  line-height: 115%;
+  color: #1D1A1A;
+}
+.description-container .description .description-element .text {
+  margin-top: 1.8vw;
+  font-weight: 300;
+  font-size: 1.04vw;
+  line-height: 130%;
+  color: #615D5D;
+}
+.description-container .description .line {
+  height: 22.13vw;
+  border: 1px solid #F2F2F2;
+}
+
+.feedback-form {
+  position: absolute;
+  width: 100vw;
+  height: 27.5vw;
+  background-color: #F3F3F3;
+}
+.feedback-form .text {
+  position: absolute;
+  margin: 7.8vw 8.33vw;
+}
+.feedback-form .text .title {
+  font-weight: 500;
+  font-size: 3.43vw;
+  line-height: 110%;
+}
+.feedback-form .text .description {
+  font-weight: 300;
+  font-size: 1.04vw;
+  line-height: 130%;
+}
+
+/*# sourceMappingURL=style.css.map */
