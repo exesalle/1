@@ -132,7 +132,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 7.1vw;
+  top: 42.81vw;
   margin-left: 13.5vw;
 }
 .pagination .dot {
@@ -140,8 +140,8 @@ body {
   cursor: pointer;
   box-sizing: border-box;
   border-radius: 50%;
-  width: 15px;
-  height: 15px;
+  width: 0.7vw;
+  height: 0.7vw;
   border: 1px solid #FFFFFF;
   background-color: transparent;
   background-image: none;
@@ -149,8 +149,8 @@ body {
 .pagination .dot.active {
   background-image: url("img/worldwide.png");
   background-size: cover;
-  width: 20px;
-  height: 20px;
+  width: 1.3vw;
+  height: 1.3vw;
   border: none;
 }
 
