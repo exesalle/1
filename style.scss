@@ -295,7 +295,8 @@ background-image: url("img/worldwide.png");
   background-color: #F3F3F3;
   .text {
     position: absolute;
-    margin: 7.8vw 8.33vw;
+    margin-top: 7.8vw;
+    margin-left: 8.33vw;
     .title {
       font-weight: $font-weight-medium;
       font-size: 3.43vw;
@@ -307,6 +308,46 @@ background-image: url("img/worldwide.png");
       font-size: 1.04vw;
       line-height: 130%;
       margin-top: 1vw;
+    }
+  }
+  .form {
+    width: 45vw;
+    margin-top: 11.4vw;
+    margin-left: auto;
+    margin-right: 8.33vw;
+    .input {
+      width: 13vw;
+      height: 3.3vw;
+      background-color: #ffffff;
+      border: none;
+      font-weight: 400;
+      font-size: 1.04vw;
+      line-height: 130%;
+      padding-left: 1.04vw;
+      margin-right: 1vw;
+      outline: none;
+      &::placeholder {
+        color: #C5C5C5;
+      }
+
+      &:focus {
+        color: #999999;
+        border: none;
+      }
+    }
+    .button-send {
+      width: 11.46vw;
+      height: 3.38vw;
+      background-color: #138F5B;
+      color: #ffffff;
+      border: none;
+      font-weight: $font-weight-medium;
+      font-size: 1.04vw;
+      line-height: 120%;
+      cursor: pointer;
+      &:hover {
+        background-color: #04643C;
+      }
     }
   }
 }

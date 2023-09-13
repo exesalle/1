@@ -262,7 +262,8 @@ body {
 }
 .feedback-form .text {
   position: absolute;
-  margin: 7.8vw 8.33vw;
+  margin-top: 7.8vw;
+  margin-left: 8.33vw;
 }
 .feedback-form .text .title {
   font-weight: 500;
@@ -275,6 +276,45 @@ body {
   font-size: 1.04vw;
   line-height: 130%;
   margin-top: 1vw;
+}
+.feedback-form .form {
+  width: 45vw;
+  margin-top: 11.4vw;
+  margin-left: auto;
+  margin-right: 8.33vw;
+}
+.feedback-form .form .input {
+  width: 13vw;
+  height: 3.3vw;
+  background-color: #ffffff;
+  border: none;
+  font-weight: 400;
+  font-size: 1.04vw;
+  line-height: 130%;
+  padding-left: 1.04vw;
+  margin-right: 1vw;
+  outline: none;
+}
+.feedback-form .form .input::placeholder {
+  color: #C5C5C5;
+}
+.feedback-form .form .input:focus {
+  color: #999999;
+  border: none;
+}
+.feedback-form .form .button-send {
+  width: 11.46vw;
+  height: 3.38vw;
+  background-color: #138F5B;
+  color: #ffffff;
+  border: none;
+  font-weight: 500;
+  font-size: 1.04vw;
+  line-height: 120%;
+  cursor: pointer;
+}
+.feedback-form .form .button-send:hover {
+  background-color: #04643C;
 }
 
 /*# sourceMappingURL=style.css.map */
