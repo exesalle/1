@@ -241,6 +241,15 @@ body {
   line-height: 115%;
   color: #1D1A1A;
 }
+.description-container .description .description-element .title span.violet {
+  color: #D72DF3;
+}
+.description-container .description .description-element .title span.blue {
+  color: #3577F6;
+}
+.description-container .description .description-element .title span.green {
+  color: #0ED984;
+}
 .description-container .description .description-element .text {
   margin-top: 1.8vw;
   font-weight: 300;

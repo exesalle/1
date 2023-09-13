@@ -250,24 +250,32 @@ background-image: url("img/worldwide.png");
           background-image: url("img/development.png");
           color: #D72DF3;
         }
-
         &.blue {
           background-image: url("img/growth.png");
           color: #3577F6;
         }
-
         &.green {
           background-image: url("img/graduated.png");
           color: #0ED984;
         }
       }
-
       .title {
         margin-top: 1.8vw;
         font-weight: $font-weight-medium;
         font-size: 1.87vw;
         line-height: 115%;
         color: #1D1A1A;
+        span {
+          &.violet {
+            color: #D72DF3;
+          }
+          &.blue {
+            color: #3577F6;
+          }
+          &.green {
+            color: #0ED984;
+          }
+        }
       }
       .text {
         margin-top: 1.8vw;
