@@ -32,7 +32,6 @@ function nextSlide() {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
 }
-
 dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
         currentIndex = i % 3;
