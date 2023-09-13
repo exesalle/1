@@ -76,7 +76,7 @@ body {
   margin: 0 0.26vw;
   width: 1.5vw;
   height: 1.5vw;
-  background-image: url("img/worldwide.png");
+  background-image: url("img/worldwide.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -164,7 +164,7 @@ body {
 }
 .pagination .dot.active {
   background-size: cover;
-  background-image: url("img/worldwide.png");
+  background-image: url("img/worldwide.svg");
   width: 1.3vw;
   height: 1.3vw;
   border: none;
@@ -418,7 +418,7 @@ body {
   margin: 0 0.26vw;
   width: 1.5vw;
   height: 1.5vw;
-  background-image: url("img/worldwide.png");
+  background-image: url("img/worldwide.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -451,7 +451,7 @@ body {
     margin: 0 1.3vw;
     width: 8vw;
     height: 8vw;
-    background-image: url("img/worldwide.png");
+    background-image: url("img/worldwide.svg");
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -547,7 +547,7 @@ body {
   }
   .pagination .dot.active {
     background-size: cover;
-    background-image: url("img/worldwide.png");
+    background-image: url("img/worldwide.svg");
     width: 6.5vw;
     height: 6.5vw;
     border: none;
@@ -557,8 +557,9 @@ body {
   }
   .feedback-form {
     width: 100vw;
-    height: 155vw;
+    height: 158vw;
     margin-top: 220vw;
+    display: block;
   }
   .feedback-form .text {
     position: absolute;
@@ -580,21 +581,22 @@ body {
   }
   .feedback-form .form {
     position: absolute;
-    width: 75vw;
-    height: 48%;
+    width: 100vw;
+    height: 17.3vw;
     margin-top: 65vw;
-    margin-right: 4.3vw;
-    margin-left: 4.3vw;
+    right: 5vw;
+    left: 5vw;
   }
   .feedback-form .form .form-input {
-    width: 80vw;
+    width: 82.5vw;
     height: 17.3vw;
     padding-left: 5vw;
     margin-top: 4vw;
     font-size: 5vw;
+    margin-right: 4.3vw;
   }
   .feedback-form .form .button-send {
-    width: 90vw;
+    width: 88vw;
     height: 17.3vw;
     font-size: 5vw;
     margin-top: 4vw;
@@ -602,6 +604,7 @@ body {
   .feedback-form .form .policy-text {
     font-size: 4vw;
     margin-top: 8vw;
+    margin-right: 12vw;
     line-height: 130%;
     font-weight: 300;
     color: #A6A6A6;
@@ -624,9 +627,22 @@ body {
     margin: 0 1.3vw;
     width: 8vw;
     height: 8vw;
-    background-image: url("img/worldwide.png");
+    background-image: url("img/worldwide.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .images-container {
+    width: 100vw;
+    height: 66.66vh;
+    top: 105vw;
+  }
+  .images-container .image {
+    height: 50%;
+    background-image: url("img/image1.png");
+    background-size: cover;
+    background-position: center right;
+    bottom: 0;
+    flex: 1;
   }
 }
 

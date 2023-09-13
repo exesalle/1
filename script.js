@@ -1,7 +1,7 @@
 const slides = document.querySelectorAll('.slider-container');
 const dots = document.querySelectorAll('.dot');
 const colors = ['#0ED984','#3577F6','#D72DF3']
-const imageUrls = ['img/worldwide_green.png', 'img/worldwide_blue.png', 'img/worldwide_violet.png'];
+const imageUrls = ['img/worldwide_green.svg', 'img/worldwide_blue.svg', 'img/worldwide_violet.svg'];
 const leftArrow = document.querySelector('.left');
 const rightArrow = document.querySelector('.right');
 let currentIndex = 0;
