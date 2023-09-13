@@ -154,6 +154,25 @@ body {
   border: none;
 }
 
+.button-more {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.4vw 2.6vw;
+  cursor: pointer;
+  position: absolute;
+  width: 10.9vw;
+  height: 3.12vw;
+  right: 0;
+  bottom: 0;
+  border: 2px dashed #FFFFFF;
+  font-weight: 500;
+  font-size: 1.04vw;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
 .images-container {
   width: 37.5vw;
   height: 100vh;
@@ -176,7 +195,7 @@ body {
 }
 
 .description-container {
-  height: 35.15vw;
+  height: 30.15vw;
   margin: 0 8.33vw;
 }
 .description-container .description {
@@ -185,7 +204,7 @@ body {
   display: flex;
 }
 .description-container .description .description-element {
-  margin: 3vw 2.6vw;
+  margin: 3vw 0;
 }
 .description-container .description .description-element .color {
   height: 3.9vw;
@@ -220,6 +239,7 @@ body {
 }
 .description-container .description .line {
   height: 22.13vw;
+  margin: 0 2.6vw;
   border: 1px solid #F2F2F2;
 }
 
@@ -239,9 +259,11 @@ body {
   line-height: 110%;
 }
 .feedback-form .text .description {
+  position: absolute;
   font-weight: 300;
   font-size: 1.04vw;
   line-height: 130%;
+  margin-top: 1vw;
 }
 
 /*# sourceMappingURL=style.css.map */
