@@ -264,7 +264,6 @@ body {
 }
 
 .feedback-form {
-  position: absolute;
   width: 100vw;
   height: 27.5vw;
   background-color: #F3F3F3;
@@ -287,10 +286,11 @@ body {
   margin-top: 1vw;
 }
 .feedback-form .form {
+  position: absolute;
   width: 45vw;
   height: 7vw;
   margin-top: 11.4vw;
-  margin-left: auto;
+  right: 0;
   margin-right: 8.33vw;
 }
 .feedback-form .form .input {
@@ -337,6 +337,33 @@ body {
 .feedback-form .form .policy-text a {
   color: #A6A6A6;
   text-decoration: underline;
+}
+
+.bottom {
+  width: 100vw;
+  height: 3.3vw;
+  background-color: #1D1A1A;
+  position: absolute;
+  padding-left: 8.33vw;
+  display: flex;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1vw;
+  line-height: 120%;
+  color: #ffffff;
+}
+.bottom span {
+  font-weight: 500;
+  color: #0ED984;
+}
+
+.logo-img {
+  margin: 0 0.26vw;
+  width: 1.5vw;
+  height: 1.5vw;
+  background-image: url("img/worldwide.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
