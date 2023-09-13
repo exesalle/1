@@ -49,5 +49,6 @@ dots.forEach((dot, i) => {
     });
 });
 
+
 setInterval(nextSlide, 3000);
 showSlide(currentIndex);

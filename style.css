@@ -33,7 +33,7 @@ body {
 .container .slider-container .slider .slide {
   display: flex;
   width: 73vw;
-  height: 100vh;
+  height: 50vw;
   transform: skew(-12deg);
   transform-origin: top left;
   position: relative;
@@ -121,12 +121,15 @@ body {
 }
 .slide-main-container .text .category .line.violet {
   border: 0.1vw solid #D72DF3;
+  background-color: #D72DF3;
 }
 .slide-main-container .text .category .line.blue {
   border: 0.1vw solid #3577F6;
+  background-color: #3577F6;
 }
 .slide-main-container .text .category .line.green {
   border: 0.1vw solid #0ED984;
+  background-color: #0ED984;
 }
 .slide-main-container .text .title {
   font-weight: 500;
@@ -342,7 +345,7 @@ body {
   right: 0;
   margin-right: 8.33vw;
 }
-.feedback-form .form .input {
+.feedback-form .form .form-input {
   width: 13vw;
   height: 3.3vw;
   background-color: #ffffff;
@@ -355,12 +358,17 @@ body {
   outline: none;
   cursor: pointer;
 }
-.feedback-form .form .input::placeholder {
+.feedback-form .form .form-input::placeholder {
   color: #C5C5C5;
 }
-.feedback-form .form .input:hover {
-  color: #999999;
+.feedback-form .form .form-input:hover {
   border: none;
+}
+.feedback-form .form .form-input.name:hover {
+  color: #999999;
+}
+.feedback-form .form .form-input.phone:hover {
+  color: #999999;
 }
 .feedback-form .form .button-send {
   width: 11.46vw;
@@ -413,6 +421,213 @@ body {
   background-image: url("img/worldwide.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 300%;
+    height: 177vw;
+    display: flex;
+  }
+  .container .slider-container {
+    width: 100vw;
+    height: 177vw;
+  }
+  .container .slider-container .slider {
+    width: 300%;
+  }
+  .container .slider-container .slider .slide {
+    display: block;
+    width: 100%;
+    height: 177vw;
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 75%);
+  }
+  .logo {
+    margin-left: 24vw;
+    margin-top: 5.2vh;
+    font-size: 5vw;
+  }
+  .logo .logo-img {
+    margin: 0 1.3vw;
+    width: 8vw;
+    height: 8vw;
+    background-image: url("img/worldwide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .slide-main-container {
+    position: absolute;
+    top: 55vw;
+    left: 4.3vw;
+    right: 4.3vw;
+    bottom: 32vw;
+  }
+  .slide-main-container .text .category {
+    position: absolute;
+    height: 10vw;
+    top: 0;
+    font-size: 5.2vw;
+    font-weight: 500;
+    line-height: 120%;
+  }
+  .slide-main-container .text .category .line {
+    position: absolute;
+    width: 100%;
+    height: 0.25vh;
+    bottom: 2vw;
+  }
+  .slide-main-container .text .title {
+    font-size: 9.3vw;
+    margin-top: 15vw;
+  }
+  .slide-main-container .text .description {
+    top: 34vw;
+    font-size: 5.2vw;
+  }
+  .button-more {
+    padding: 2vw 13vw;
+    width: 56vw;
+    height: 16vw;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 5.2vw;
+    border: 0.7vw dashed #FFFFFF;
+  }
+  .description-container {
+    width: 100vw;
+    margin: 0 4.3vw;
+  }
+  .description-container .description {
+    margin: 19.95vw 0;
+    flex-direction: column;
+  }
+  .description-container .description .description-element {
+    margin: 6vw 20vw 6vw 0;
+  }
+  .description-container .description .description-element .color {
+    height: 13.3vw;
+    width: 13.3vw;
+    background-size: cover;
+  }
+  .description-container .description .description-element .title {
+    margin-top: 5.32vw;
+    font-weight: 500;
+    font-size: 6vw;
+    line-height: 115%;
+    color: #1D1A1A;
+  }
+  .description-container .description .description-element .text {
+    margin-top: 5.32vw;
+    font-weight: 300;
+    font-size: 4.3vw;
+    line-height: 130%;
+    color: #615D5D;
+  }
+  .description-container .description .line {
+    height: 22.13vw;
+    margin: 6vw 0;
+    border: 1px solid #F2F2F2;
+  }
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 160vw;
+    margin-left: 4.3vw;
+  }
+  .pagination .dot {
+    margin: 0 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 3.5vw;
+    height: 3.5vw;
+    border: 1px solid #FFFFFF;
+  }
+  .pagination .dot.active {
+    background-size: cover;
+    background-image: url("img/worldwide.png");
+    width: 6.5vw;
+    height: 6.5vw;
+    border: none;
+  }
+  .arrows {
+    display: none;
+  }
+  .feedback-form {
+    width: 100vw;
+    height: 155vw;
+    margin-top: 220vw;
+  }
+  .feedback-form .text {
+    position: absolute;
+    margin-top: 18vw;
+    margin-right: 4.3vw;
+    margin-left: 4.3vw;
+  }
+  .feedback-form .text .title {
+    font-weight: 500;
+    font-size: 9.3vw;
+    line-height: 110%;
+  }
+  .feedback-form .text .description {
+    position: absolute;
+    font-weight: 300;
+    font-size: 5.2vw;
+    line-height: 130%;
+    margin-top: 4vw;
+  }
+  .feedback-form .form {
+    position: absolute;
+    width: 75vw;
+    height: 48%;
+    margin-top: 65vw;
+    margin-right: 4.3vw;
+    margin-left: 4.3vw;
+  }
+  .feedback-form .form .form-input {
+    width: 80vw;
+    height: 17.3vw;
+    padding-left: 5vw;
+    margin-top: 4vw;
+    font-size: 5vw;
+  }
+  .feedback-form .form .button-send {
+    width: 90vw;
+    height: 17.3vw;
+    font-size: 5vw;
+    margin-top: 4vw;
+  }
+  .feedback-form .form .policy-text {
+    font-size: 4vw;
+    margin-top: 8vw;
+    line-height: 130%;
+    font-weight: 300;
+    color: #A6A6A6;
+    text-align: center;
+  }
+  .feedback-form .form .policy-text a {
+    color: #A6A6A6;
+    text-decoration: underline;
+  }
+  .bottom {
+    width: 100vw;
+    height: 17.3vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    font-size: 5vw;
+    padding-left: 24vw;
+  }
+  .logo-img {
+    margin: 0 1.3vw;
+    width: 8vw;
+    height: 8vw;
+    background-image: url("img/worldwide.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
