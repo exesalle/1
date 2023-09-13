@@ -98,20 +98,35 @@ body {
 }
 .slide-main-container .text .category {
   position: absolute;
+  height: 2vw;
   top: 0;
   font-size: 1.04vw;
+  font-weight: 500;
+  line-height: 120%;
 }
 .slide-main-container .text .category.violet-text {
-  font-weight: 500;
   color: #D72DF3;
 }
 .slide-main-container .text .category.blue-text {
-  font-weight: 500;
   color: #3577F6;
 }
 .slide-main-container .text .category.green-text {
-  font-weight: 500;
   color: #0ED984;
+}
+.slide-main-container .text .category .line {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0.4vw;
+}
+.slide-main-container .text .category .line.violet {
+  border: 0.1vw solid #D72DF3;
+}
+.slide-main-container .text .category .line.blue {
+  border: 0.1vw solid #3577F6;
+}
+.slide-main-container .text .category .line.green {
+  border: 0.1vw solid #0ED984;
 }
 .slide-main-container .text .title {
   font-weight: 500;
@@ -150,6 +165,40 @@ body {
   width: 1.3vw;
   height: 1.3vw;
   border: none;
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  margin: 23.7vw 3.4vw;
+  height: 2.6vw;
+  cursor: pointer;
+}
+.arrows .left {
+  height: 2.6vw;
+  width: 2.6vw;
+  left: 0;
+  background-image: url("img/next.png");
+  background-size: cover;
+}
+.arrows .left:hover {
+  height: 2.6vw;
+  width: 2.6vw;
+  background-image: url("img/next_hover.png");
+}
+.arrows .right {
+  position: absolute;
+  height: 2.6vw;
+  width: 2.6vw;
+  margin-left: 88vw;
+  background-image: url("img/next.png");
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.arrows .right:hover {
+  height: 2.6vw;
+  width: 2.6vw;
+  background-image: url("img/next_hover.png");
 }
 
 .button-more {

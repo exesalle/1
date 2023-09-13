@@ -1,6 +1,9 @@
 const slides = document.querySelectorAll('.slider-container');
 const dots = document.querySelectorAll('.dot');
 const colors = ['#0ED984','#3577F6','#D72DF3']
+const imageUrls = ['img/worldwide_green.png', 'img/worldwide_blue.png', 'img/worldwide_violet.png'];
+const leftArrow = document.querySelector('.left');
+const rightArrow = document.querySelector('.right');
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -10,11 +13,11 @@ function showSlide(index) {
 
     dots.forEach((dot, i) => {
         dot.classList.remove('active');
-        dot.style.color = '';
+        dot.style.backgroundImage = '';
     });
 
     dots[index].classList.add('active');
-    dots[index].style.color= colors[index];
+    dots[index].style.backgroundImage = `url(${imageUrls[index]})`;
 
     dots.forEach((dot, i) => {
         dot.addEventListener('mouseover', () => {
@@ -32,6 +35,13 @@ function nextSlide() {
     currentIndex = (currentIndex + 1) % slides.length;
     showSlide(currentIndex);
 }
+function prevSlide() {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+    showSlide(currentIndex);
+}
+
+leftArrow.addEventListener('click', prevSlide);
+rightArrow.addEventListener('click', nextSlide);
 dots.forEach((dot, i) => {
     dot.addEventListener('click', () => {
         currentIndex = i % 3;

@@ -115,24 +115,37 @@ background-image: url("img/worldwide.png");
 
     .category {
       position: absolute;
+      height: 2vw;
       top: 0;
       font-size: 1.04vw;
+      font-weight: $font-weight-medium;
+      line-height: 120%;
       &.violet-text {
-        font-weight: $font-weight-medium;
         color: #D72DF3;
       }
-
       &.blue-text {
-        font-weight: $font-weight-medium;
         color: #3577F6;
       }
-
       &.green-text {
-        font-weight: $font-weight-medium;
         color: #0ED984;
       }
-
+      .line {
+        position: absolute;
+        width: 100%;
+        height: 0;
+        bottom: 0.4vw;
+        &.violet {
+          border: 0.1vw solid #D72DF3;
+        }
+        &.blue {
+          border: 0.1vw solid #3577F6;
+        }
+        &.green {
+          border: 0.1vw solid #0ED984;
+        }
+      }
     }
+
 
     .title {
       font-weight: $font-weight-medium;
@@ -172,6 +185,40 @@ background-image: url("img/worldwide.png");
       width: 1.3vw;
       height: 1.3vw;
       border: none;
+    }
+  }
+}
+
+.arrows {
+  position: absolute;
+  display: flex;
+  margin: 23.7vw 3.4vw;
+  height: 2.6vw;
+  cursor: pointer;
+  .left {
+    height: 2.6vw;
+    width: 2.6vw;
+    left: 0;
+    background-image: url('img/next.png');
+    background-size: cover;
+    &:hover {
+      height: 2.6vw;
+      width: 2.6vw;
+      background-image: url('img/next_hover.png');
+    }
+  }
+  .right {
+    position: absolute;
+    height: 2.6vw;
+    width: 2.6vw;
+    margin-left: 88vw;
+    background-image: url('img/next.png');
+    background-size: cover;
+    transform: rotate(180deg);
+    &:hover {
+      height: 2.6vw;
+      width: 2.6vw;
+      background-image: url('img/next_hover.png');
     }
   }
 }
