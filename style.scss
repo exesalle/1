@@ -165,14 +165,10 @@ background-image: url("img/worldwide.png");
     border-radius: 50%;
     width: 0.7vw;
     height: 0.7vw;
-
     border: 1px solid #FFFFFF;
-    background-color: transparent;
-    background-image: none;
-
     &.active {
-      background-image: url('img/worldwide.png');
       background-size: cover;
+      background-image: url('img/worldwide.png');
       width: 1.3vw;
       height: 1.3vw;
       border: none;
@@ -196,8 +192,24 @@ background-image: url("img/worldwide.png");
   font-weight: $font-weight-medium;
   font-size: 1.04vw;
   line-height: 120%;
-
   color: #FFFFFF;
+
+  &:hover {
+    border: none;
+    background-color: #ffffff;
+  }
+
+  &.violet:hover {
+    color: #D72DF3;
+  }
+
+  &.blue:hover {
+    color: #3577F6;
+  }
+
+  &.green:hover {
+    color: #0ED984;
+  }
 }
 
 .images-container {
@@ -235,7 +247,6 @@ background-image: url("img/worldwide.png");
         width: 3.9vw;
         background-size: cover;
         &.violet {
-
           background-image: url("img/development.png");
           color: #D72DF3;
         }

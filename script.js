@@ -1,5 +1,6 @@
 const slides = document.querySelectorAll('.slider-container');
 const dots = document.querySelectorAll('.dot');
+const colors = ['#0ED984','#3577F6','#D72DF3']
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -9,9 +10,21 @@ function showSlide(index) {
 
     dots.forEach((dot, i) => {
         dot.classList.remove('active');
+        dot.style.color = '';
     });
 
     dots[index].classList.add('active');
+    dots[index].style.color= colors[index];
+
+    dots.forEach((dot, i) => {
+        dot.addEventListener('mouseover', () => {
+            dot.style.borderColor = colors[index];
+        });
+
+        dot.addEventListener('mouseout', () => {
+            dot.style.borderColor = '';
+        });
+    });
 
 }
 
